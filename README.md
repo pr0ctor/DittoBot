@@ -1,0 +1,2 @@
+# DittoBot
+Basic Discord Bot
