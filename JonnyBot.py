@@ -1,7 +1,7 @@
 '''
-Created on Feb 13, 2018
+Created on Mar 7, 2018
 
-@author: ryanforsyth
+@author: Carl Payne / github.com/pr0ctor
 '''
 import discord
 from discord.ext import commands
@@ -39,7 +39,7 @@ async def free(ctx,user: discord.Member):
     general = discord.utils.get(ctx.message.server.channels, name="General", type=discord.ChannelType.voice)
     await bot.move_member(user,general)
     print("Moved " + user.name + " to General Chat")
-    
+
     await bot.say("Done.")
 
 @bot.command(pass_context=True)
